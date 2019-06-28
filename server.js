@@ -30,7 +30,7 @@ express()
   .get('/api/:word', word)
   .get('/', home)
   .get('/:word', entry)
-  .listen(2000)
+  .listen(8081)
 
 function worker(req, res) {
   res.sendFile(path.join(__dirname, 'public', 'worker.js'))
